@@ -5,7 +5,7 @@
   "version": "0.2.2",
   "repository": {
     "type": "git",
-    "url": "git@github.com:gotwarlost/istanbul-middleware.git"
+    "url": "git@github.com:jtmobs/istanbul-middleware.git"
   },
   "scripts": {
     "pretest": "jshint --config ./node_modules/yui-lint/jshint.json lib/*js",
@@ -22,6 +22,7 @@
   ],
   "dependencies": {
     "istanbul": "0.4.x",
+    "@babel/preset-react": "^7.24.1",
     "express": "4.x",
     "body-parser": "~1.12.3",
     "archiver": "0.14.x"
@@ -31,7 +32,13 @@
     "rimraf": "*",
     "jshint": "*",
     "async": "*",
-    "yui-lint": "*"
+    "yui-lint": "*",
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.3",
+    "babel-plugin-istanbul": "^6.1.1",
+    "nodemon": "^3.0.1"
   },
   "engines": {
     "node": ">=0.6.x"
